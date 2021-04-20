@@ -60,7 +60,7 @@ for(let i=0; i<numbers.length; i++){
 for(let i=0; i<numbers.length; i++){
     if(numbers[i] % 5 === 0){
         console.log(numbers[i])
-    }
+    } 
 }
 
 // 9. Log all the element of the array one by one
