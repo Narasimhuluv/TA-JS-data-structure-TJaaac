@@ -54,16 +54,23 @@ for(let user of userIds){
     times(5); // ['test', 'test', 'test', 'test', 'test']
 */
 
-function times() {
-  // Your code
+function times(noOfTime, character) {
+  if(noOfTime<1) return [];
+  let final = [];
+  for(let i = 0 ; i < times ; i++){
+    final.push(character);
+  }
+  return final
 }
+
+
 
 // Uncomment the code below and test the output
 
-// console.log(times(5, 'c')); // ['c', 'c', 'c', 'c', 'c']
-// console.log(times(2, 'a')); // ['a', 'a']
-// console.log(times(0)); // []
-// console.log(times(5)); // ['test', 'test', 'test', 'test', 'test']
+console.log(times(5, 'c')); // ['c', 'c', 'c', 'c', 'c']
+console.log(times(2, 'a')); // ['a', 'a']
+console.log(times(0)); // []
+console.log(times(5)); // ['test', 'test', 'test', 'test', 'test']
 
 /*
 
@@ -99,15 +106,30 @@ function revert() {
     clear(['a', undefined, 'd', 0,  'c', 'b']); // ['b', 'c', 'd', 'a']
     clear(['Ryan', null, 0,  'John', 'Bran']); //['Bran', 'John', 'Ryan']
 */
+function isunwanted(value) {
+  // your code
+  return value == false || 
+    value == null || 
+    value == "" || 
+    value == undefined || 
+    value == 0
+}
 
 function clear() {
   // your code
+  let final = []
+  for(let value of arr){
+    if(!isunwanted(value)){
+      final.push(value)
+    }
+  }
+  return final
 }
 
 // Uncomment the code below and test the output
-// console.log(clear([1, 2, 3, 4, '', 0, null, undefined])); // [4, 3, 2, 1]
-// console.log(clear(['a', undefined, 'd', 0, 'c', 'b'])); // ['b', 'c', 'd', 'a']
-// console.log(clear(['Ryan', null, 0, 'John', 'Bran'])); //['Bran', 'John', 'Ryan']
+console.log(clear([1, 2, 3, 4, '', 0, null, undefined])); // [4, 3, 2, 1]
+console.log(clear(['a', undefined, 'd', 0, 'c', 'b'])); // ['b', 'c', 'd', 'a']
+console.log(clear(['Ryan', null, 0, 'John', 'Bran'])); //['Bran', 'John', 'Ryan']
 
 /*
 
