@@ -32,4 +32,4 @@ let newUser = user;
 - `brothersCopy === user.sibling;` // true because the brothersCopy == user.sibling are copying by refernce from user
 - `brothersCopy[0] === user.sibling[0];` // true because the brothersCopy[0] === user.sibling[0] are copying by refernce from user ueser.sibling[0]
 - `brothersCopy[1] === user.sibling[1];` // true because the brothersCopy[1] === user.sibling[1] are copying by refernce from user user.sibling[1]
-- `user.sibling[1] === newUser.sibling[1];` // true because the brothersCopy[1] === user.sibling[1] are copying by refernce from user user.sibling[1]
+- `user.sibling[1] === newUser.sibling[1];` // true because the brothersCopy[1] === user.sibling[1] are copying by refernce from user user.sibling[1] 
